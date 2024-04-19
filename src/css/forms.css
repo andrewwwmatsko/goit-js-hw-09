@@ -52,7 +52,8 @@
   border: 1px solid #000;
 }
 
-.feedback-form input[type='email']:active {
+.feedback-form input[type='email']:active,
+.feedback-form textarea:active {
   border: 1px solid #808080;
 }
 
