@@ -28,6 +28,13 @@
   -moz-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
-.basicLightbox {
+.simple-lightbox {
   background: rgba(46, 47, 66, 0.8);
+}
+
+.simple-lightbox .sl-navigation .sl-prev,
+.simple-lightbox .sl-navigation .sl-next,
+.simple-lightbox div.sl-counter,
+.simple-lightbox button.sl-close {
+  color: #fff;
 }

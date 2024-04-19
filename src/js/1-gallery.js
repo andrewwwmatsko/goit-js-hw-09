@@ -70,8 +70,6 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-const galleryLinks = document.querySelectorAll('.gallery-link');
-
 const imgs = images
   .map(image => {
     return `<li class="gallery-item">
@@ -87,9 +85,6 @@ const imgs = images
 gallery.insertAdjacentHTML('afterbegin', imgs);
 
 var lightbox = new SimpleLightbox('.gallery a', {
-  /* options */
-});
-
-gallery.addEventListener('click', e => {
-  e.preventDefault();
+  captionDelay: 250,
+  captionsData: 'alt',
 });
